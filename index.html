@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -9,6 +13,16 @@
   <body>
     Hello World 
     this is my block
+    <header id="header">
+      <img id="header-img" src="data:image/png;base64,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">
+    </header>
+
+
+ 
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     <!--
